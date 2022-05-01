@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #252525;
+    --bg-secondary: #808080;
+    --yelow: #afaf00;
+    --red: #af0000;
+    --blue: #0000af;
+    --ico: crimson;
+    --vievport-max-width: 1280px;
+    --td-size: 100px;
+    /* End of variables */
+    color: var(--text-primary);
+    font-family: Rubik;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+.container {
+    max-width: var(--vievport-max-width);
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+}
+
+table {
+    /* width: 100%; */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 10px;
+}
+
+td {
+    background-color: var(--bg-secondary);
+    text-align: center;
+    width: calc(var(--td-size) / 2);
+    /* width: 12.5%; */
+    height: var(--td-size);
+    border: 2px solid var(--text-secondary);
+}
+
+/* cell sizes */
+
+.half-h td {
+    height: calc(var(--td-size) / 2);
+}
+
+/* Обманка для удержание структуры */
+.fake-row td {
+    height: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Clors */
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-yellow {
+    background-color: var(--yelow);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-dark {
+    background-color: var(--bg-primary);
+}

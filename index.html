@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица Мондриана</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95012a2d1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <table>
+            <caption>Таблица Мондриана</caption>
+            <tr>
+                <td colspan="3">11</td>
+                <td colspan="2">12</td>
+                <td colspan="2" class="bg-yellow">13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td rowspan="2" colspan="4" class="bg-red">22</td>
+                <td colspan="2" class="bg-yellow">23</td>
+                <td rowspan="3">24</td>
+            </tr>
+            <tr>
+                <td rowspan="2">31</td>
+                <td>32</td>
+                <td>33</td>
+            </tr>
+            <tr class="half-h">
+                <td rowspan="2" colspan="2" class="bg-dark">41</td>
+                <td colspan="2">42</td>
+                <td colspan="2">43</td>
+            </tr>
+            <tr class="half-h">
+                <td rowspan="2" class="bg-yellow">51</td>
+                <td colspan="2">52</td>
+                <td rowspan="2" colspan="2" class="bg-blue">53</td>
+                <td rowspan="2" class="bg-red">54</td>
+            </tr>
+            <tr class="half-h">
+                <td colspan="2">61</td>
+                <td colspan="2" class="bg-dark">62</td>
+            </tr>
+            <!-- обманка для удержания ширины -->
+            <tr class="fake-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </main>
+</body>
+
+</html>
